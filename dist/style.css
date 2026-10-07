@@ -204,7 +204,7 @@ h1 { max-width: 650px; margin: 0 0 25px; font-size: clamp(3.9rem, 7vw, 7.2rem); 
   .marquee span:nth-of-type(odd) { border-right: 1px solid rgba(255,255,255,.06); }
   .marquee i { display: none; }
   .feature-grid { grid-template-columns: 1fr; }.feature-card, .feature-card--wide { grid-column: auto; min-height: auto; }.feature-card--wide { grid-template-columns: 42px 1fr; padding-right: 28px; padding-bottom: 155px; }.six-dots { width: 150px; top: auto; right: 50%; bottom: 23px; transform: translateX(50%); }
-  .how-grid { grid-template-columns: 1fr; }.how-visual { min-height: 480px; order: 2; }.how-visual img { width: min(560px, 130vw); }.how-copy { order: 1; }.screen-callout { bottom: 7%; }
+  .how-grid { grid-template-columns: minmax(0, 1fr); }.how-copy { min-width: 0; order: 1; }.steps li { grid-template-columns: 46px minmax(0, 1fr); gap: 14px; }.steps li > div { min-width: 0; }.steps p, .how-note { overflow-wrap: anywhere; }.how-visual { min-width: 0; min-height: 480px; grid-template-columns: minmax(0, 1fr); order: 2; }.how-visual img { width: min(560px, 130vw); justify-self: center; }.screen-callout { bottom: 7%; }
   .section-heading--split { grid-template-columns: 1fr; gap: 10px; }.gallery-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }.product-shot figcaption { padding: 15px; }.product-shot figcaption strong { font-size: .92rem; }.product-shot figcaption span { font-size: .7rem; }
   .specs-grid { grid-template-columns: 1fr; gap: 45px; }.specs-copy { text-align: center; }.specs-copy > p:not(.eyebrow) { margin-inline: auto; }
   .flavor-grid { grid-template-columns: 1fr; }.flavor-card { min-height: auto; }
@@ -220,6 +220,7 @@ h1 { max-width: 650px; margin: 0 0 25px; font-size: clamp(3.9rem, 7vw, 7.2rem); 
   .hero-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }.hero-facts div { display: block; margin: 0; padding: 0 7px; text-align: center; }.hero-facts strong, .hero-facts span { display: block; }.hero-facts strong { font-size: 1rem; }.hero-facts span { margin-top: 5px; font-size: .58rem; }
   .hero-visual { min-height: 420px; }.hero-visual img { width: min(480px, 142vw); }.orbit--one { width: 330px; }.orbit--two { width: 410px; }.visual-label { font-size: .55rem; }.visual-label--top { top: 54px; right: 0; }.visual-label--bottom { bottom: 20px; }
   .marquee > div { font-size: .62rem; letter-spacing: .1em; }
+  .steps { margin-top: 30px; }.steps li { grid-template-columns: 40px minmax(0, 1fr); gap: 12px; padding: 20px 0; }.steps li > span { width: 34px; height: 34px; }.steps h3 { font-size: 1.08rem; line-height: 1.18; }.steps p, .how-note { font-size: .84rem; line-height: 1.55; }
   .gallery-grid { grid-template-columns: 1fr; }.product-shot img { aspect-ratio: 1; transform: scale(1.02); }
   .spec-list div { grid-template-columns: .8fr 1.2fr; gap: 12px; }.spec-list dd { overflow-wrap: anywhere; }
   .flavor-card { padding: 24px 20px 24px 58px; }.flavor-number { left: 19px; top: 25px; }
