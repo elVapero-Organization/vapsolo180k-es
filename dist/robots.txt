@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://vapsolo180k.es/sitemap.xml
